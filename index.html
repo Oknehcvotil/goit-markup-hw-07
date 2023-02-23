@@ -53,6 +53,18 @@
             </li>
           </ul>
         </nav>
+        <button
+          type="button"
+          class="head-menu-bt bt js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="head-menu-bt-icon" width="32" height="22">
+            <use
+              href="./images/icons.svg/symbol-defs.svg#icon-menu-hamburger"
+            ></use>
+          </svg>
+        </button>
         <address class="adress">
           <ul class="adress-list list">
             <li class="adress-item">
@@ -90,7 +102,7 @@
           </button>
         </div>
       </section>
-      <!-- 2ND Block -->
+      <!-- Adventages Block -->
       <section class="adventages section">
         <div class="container">
           <h2 class="adventages-title visually-hidden">Adventages</h2>
@@ -154,54 +166,106 @@
           </ul>
         </div>
       </section>
-      <!-- 3D BLOCK -->
+      <!-- projects BLOCK -->
       <section class="projects-studio section">
         <div class="container">
           <h2 class="projects-studio-title">What are we doing</h2>
           <ul class="projects-studio-list list">
             <li class="projects-studio-item">
-              <img
-                class="projects-studio-img"
-                src="./images/what_we_are_doing/computer.jpg"
-                alt="computer"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what_we_are_doing/computer.webp    1x,
+                    ./images/what_we_are_doing/computer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/what_we_are_doing/computer.jpg    1x,
+                    ./images/what_we_are_doing/computer@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="projects-studio-img"
+                  src="./images/what_we_are_doing/computer.jpg"
+                  alt="computer"
+                />
+              </picture>
             </li>
             <li class="projects-studio-item">
-              <img
-                class="projects-studio-img"
-                src="./images/what_we_are_doing/sms_menu.jpg"
-                alt="phone"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what_we_are_doing/sms_menu.webp    1x,
+                    ./images/what_we_are_doing/sms_menu@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/what_we_are_doing/sms_menu.jpg    1x,
+                    ./images/what_we_are_doing/sms_menu@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="projects-studio-img"
+                  src="./images/what_we_are_doing/sms_menu.jpg"
+                  alt="phone"
+                />
+              </picture>
             </li>
             <li class="projects-studio-item">
-              <img
-                class="projects-studio-img"
-                src="./images/what_we_are_doing/phone_in_hand.jpg"
-                alt="phone"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/what_we_are_doing/phone_in_hand.webp    1x,
+                    ./images/what_we_are_doing/phone_in_hand@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/what_we_are_doing/phone_in_hand.jpg    1x,
+                    ./images/what_we_are_doing/phone_in_hand@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="projects-studio-img"
+                  src="./images/what_we_are_doing/phone_in_hand.jpg"
+                  alt="phone"
+                />
+              </picture>
             </li>
           </ul>
         </div>
       </section>
-      <!-- 4D BLOCK -->
+      <!-- TEAM BLOCK -->
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team/mark_g.jpg"
-                alt="team member"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mark_g.webp    1x,
+                    ./images/team/mark_g@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mark_g.jpg    1x,
+                    ./images/team/mark_g@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./images/team/mark_g.jpg"
+                  alt="team member"
+                />
+              </picture>
               <div class="team-list-content">
                 <h3 class="team-list-title">Mark Guerrero</h3>
                 <p class="team-list-subtitle text">Product Designer</p>
@@ -265,14 +329,28 @@
                 </ul>
               </div>
             </li>
+
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team/tom_f.jpg"
-                alt="team member"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/tom_f.webp    1x,
+                    ./images/team/tom_f@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tom_f.jpg    1x,
+                    ./images/team/tom_f@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./images/team/tom_f.jpg"
+                  alt="team member"
+                />
+              </picture>
               <div class="team-list-content">
                 <h3 class="team-list-title">Tom Ford</h3>
                 <p class="team-list-subtitle text">Frontend Developer</p>
@@ -336,14 +414,28 @@
                 </ul>
               </div>
             </li>
+
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team/camila_g.jpg"
-                alt="team member"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/camila_g.webp    1x,
+                    ./images/team/camila_g@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/camila_g.jpg    1x,
+                    ./images/team/camila_g@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./images/team/camila_g.jpg"
+                  alt="team member"
+                />
+              </picture>
               <div class="team-list-content">
                 <h3 class="team-list-title">Camila Garcia</h3>
                 <p class="team-list-subtitle text">Marketing</p>
@@ -407,14 +499,28 @@
                 </ul>
               </div>
             </li>
+
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team/daniel_w.jpg"
-                alt="team member"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/daniel_w.webp    1x,
+                    ./images/team/daniel_w@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/daniel_w.jpg    1x,
+                    ./images/team/daniel_w@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-img"
+                  src="./images/team/daniel_w.jpg"
+                  alt="team member"
+                />
+              </picture>
               <div class="team-list-content">
                 <h3 class="team-list-title">Daniel Wilson</h3>
                 <p class="team-list-subtitle text">UI Designer</p>
@@ -481,7 +587,7 @@
           </ul>
         </div>
       </section>
-      <!-- 5th BLOCK -->
+      <!-- customers BLOCK -->
       <section class="customers section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
@@ -679,14 +785,125 @@
         </div>
       </div>
     </footer>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu-container container">
+        <button type="button" class="mobile-close-bt bt js-close-menu">
+          <svg class="mobile-close-bt-icon" width="8" height="8">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list list">
+            <li class="mobile-nav-item">
+              <a
+                href="./index.html"
+                class="mobile-nav-link mobile-nav-link-active links"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a
+                href="./portfolio.html"
+                class="mobile-nav-link links"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a href="" class="mobile-nav-link links">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-adress">
+          <ul class="mobile-adress-list list">
+            <li class="mobile-adress-item">
+              <a
+                href="tel:+110001111111"
+                class="mobile-tel-link links"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-adress-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-mail-link links"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-social-list list">
+          <li class="mobile-menu-social-item">
+            <a
+              href="#"
+              class="mobile-menu-social-link links"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              href="#"
+              class="mobile-menu-social-link links"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              href="#"
+              class="mobile-menu-social-link links"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-item">
+            <a
+              href="#"
+              class="mobile-menu-social-link links"
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+            >
+              <svg class="mobile-menu-social-icon" width="24" height="24">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- MODAL WINDOW -->
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal">
-        <button
-          data-modal-close
-          type="button"
-          class="modal-close-bt modal-close-bt-active bt"
-        >
+        <button data-modal-close type="button" class="modal-close-bt bt">
           <svg class="modal-close-bt-icon" width="8" height="8">
             <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
           </svg>
@@ -773,5 +990,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
