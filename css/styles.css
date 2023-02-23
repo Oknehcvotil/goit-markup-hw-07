@@ -80,23 +80,19 @@ body {
 .container {
   padding: var(--padding-content);
   margin: 0 auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 426px;
-  }
+  max-width: 426px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 766px;
+    max-width: 766px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 }
 
@@ -303,9 +299,9 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
-  screen and (min-resolution: 192dpi) and (max-width: 768px),
-  screen and (min-resolution: 2dppx) and (max-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 480px),
+  screen and (min-resolution: 192dpi) and (max-width: 480px),
+  screen and (min-resolution: 2dppx) and (max-width: 480px) {
   .hero-studio {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -315,7 +311,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .hero-studio {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -326,9 +322,9 @@ body {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+  screen and (min-resolution: 192dpi) and (min-width: 480px),
+  screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .hero-studio {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -338,7 +334,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero-studio {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -350,9 +346,9 @@ body {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero-studio {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1065,6 +1061,9 @@ body {
 }
 
 .mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
   padding: 80px 15px 40px 40px;
 }
@@ -1085,7 +1084,7 @@ body {
 }
 
 .mobile-nav {
-  margin-bottom: 284px;
+  margin-bottom: auto;
 }
 
 .mobile-close-bt:hover,
@@ -1147,12 +1146,11 @@ body {
 }
 
 .mobile-menu-social-list {
+  max-width: 328px;
+  width: 100%;
   display: flex;
   align-items: center;
-}
-
-.mobile-menu-social-item:not(:last-child) {
-  margin-right: 56px;
+  justify-content: space-between;
 }
 
 .mobile-menu-social-link {
